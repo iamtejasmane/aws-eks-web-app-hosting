@@ -80,7 +80,7 @@ In preparation to manage your EKS Kubernetes cluster, you will need to install s
 
 The cloud native application is architected using containers and is presented to the end-user as a web application accessible over the Internet. The application frontend provides the end-user with the ability to vote on one of 6 programming languages: C#, Python, JavaScript, Go, Java, and/or NodeJS. Voting activity within the browser generates AJAX requests being sent to an API which in turn then saves the results into a MongoDB database backend.
 
-!['Architecture'](/img/arch-main.png)
+!['Architecture'](/img/app.png)
 
 The architecture of the cloud native application will expose you to configuring, deploying, and managing the following Kubernetes resources:
 
@@ -104,7 +104,7 @@ The following sequence diagram shows the messaging as used within the applicatio
 - A response containing the programming language then flows back all the way to the browser
 - The browser renders the full application view.
 
-  !['Application'](/img/app.png)
+  !['Application'](/img/arch-main.png)
 
   The following sequence diagram shows the messaging as used within the application when an end-user clicks on the voting +1 button for a particular programming language. Key points of this diagram are:
 
